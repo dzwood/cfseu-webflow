@@ -1,0 +1,75 @@
+/* Medium */
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-Medium.ttf");
+
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-MediumItalic.ttf");
+
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-Regular.ttf");
+
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-Italic.ttf");
+
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-SemiBold.ttf");
+
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-SemiBoldItalic.ttf");
+
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-Bold.ttf");
+
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "STIXTwoText";
+  src: url("/fonts/STIX_Two_Text/STIXTwoText-BoldItalic.ttf");
+
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+}
