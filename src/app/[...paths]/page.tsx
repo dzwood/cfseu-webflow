@@ -11,10 +11,13 @@ export default async function DynamicPages({
 
   return (
     props && (
-      <>
-        <head>{parseHtml(props?.headContent)}</head>
-        <div dangerouslySetInnerHTML={{ __html: props?.bodyContent }} />
-      </>
+      <html suppressHydrationWarning={true}>
+        <head>{parseHtml(props?.headContent, { trim: true })}</head>
+        <body
+          suppressHydrationWarning={true}
+          dangerouslySetInnerHTML={{ __html: props?.bodyContent }}
+        />
+      </html>
     )
   );
 }

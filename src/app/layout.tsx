@@ -18,9 +18,11 @@ export default async function RootLayout({
   const { props } = await getWebflowData(null);
 
   return (
-    <html lang="en">
-      <head>{parseHtml(props?.headContent.trim())}</head>
-      <body className={poppins.className}>{children}</body>
+    <html suppressHydrationWarning={true} lang="en">
+      <head>{parseHtml(props?.headContent, { trim: true })}</head>
+      <body suppressHydrationWarning={true} className={poppins.className}>
+        {children}
+      </body>
     </html>
   );
 }
