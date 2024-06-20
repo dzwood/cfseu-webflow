@@ -1,15 +1,26 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import parseHtml from "html-react-parser";
 
-const inter = Inter({ subsets: ["latin"] });
+import { getWebflowData } from "./getWebflow";
 
-export default function RootLayout({
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  //Grab the head content from Webflow
+  const { props } = await getWebflowData(null);
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>{parseHtml(props?.headContent.trim())}</head>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
