@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://developers-top-notch-site-cee513.webflow.io/sitemap.xml
